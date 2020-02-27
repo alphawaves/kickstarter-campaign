@@ -70,7 +70,7 @@ contract("CampaignFactory", accounts => {
     // let balance = web3.utils.fromWei(weiBalance, 'ether');
     // balance = parseFloat(balance);
 
-    let expectedBalance = web3.utils.toBN(web3.utils.toWei('100', 'ether'));
+    let Balance = web3.utils.toBN(web3.utils.toWei('100', 'ether'));
     let actualBalance = web3.utils.toBN(await web3.eth.getBalance(accounts[3]));
 
     assert.equal(expectedBalance.cmp(actualBalance), -1);

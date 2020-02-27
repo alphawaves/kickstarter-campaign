@@ -1,0 +1,28 @@
+{
+  "name": "kickstarter-campaign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test ethereum": "truffle test",
+    "dev": "next",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.31",
+    "dotenv": "^8.2.0",
+    "next": "^9.2.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "web3": "^1.2.6"
+  }
+}
