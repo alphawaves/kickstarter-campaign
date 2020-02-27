@@ -1,12 +1,19 @@
 import React from 'react';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import { Form } from 'semantic-ui-react';
 
-const NewRequests = () => {
+const NewRequest = () => {
     const router = useRouter();
     const { pid } = router.query;
     return (
-        <div>New requests for campaign: {pid} </div>
+        <div>Create a Request</div>
    )
 }
 
-export default NewRequests;
+// NewRequest.getInitialProps = async (context) => {
+//     const address = Campaign(context.query.pid);
+
+//     return { address }
+// }
+
+export default NewRequest;
