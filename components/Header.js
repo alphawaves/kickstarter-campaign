@@ -1,5 +1,5 @@
 import { Menu } from 'semantic-ui-react';
-import Link from 'next/link'
+import Link from 'next/link';
   
   const Header = () => (
     <Menu style={{ marginTop: '10px' }}>

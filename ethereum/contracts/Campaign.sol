@@ -1,4 +1,5 @@
 pragma solidity >= 0.5.0 < 0.7.0;
+pragma experimental ABIEncoderV2;
 
 /// @title A crowdfunding campaign contract
 /// @author Author_Name_Goes_Here
@@ -103,4 +104,24 @@ contract Campaign {
   function getRequestCount() public view returns (uint) {
     return requests.length;
   }
+
+  // function getAllRequests() public view returns (uint, string[] memory, uint[] memory, address[] memory, bool[] memory, uint[] memory) {
+
+  //   string[] memory descriptions = new string[](requests.length);
+  //   uint[] memory values = new uint[](requests.length);
+  //   address[] memory recipients = new address[](requests.length);
+  //   bool[] memory complete = new bool[](requests.length);
+  //   uint[] memory approvalCounts = new uint[](requests.length);
+
+  //   for (uint i = 0; i < requests.length; i++) {
+  //         Request storage request = requests[i];
+  //         descriptions[i] = request.description;
+  //         values[i] = request.value;
+  //         recipients[i] = request.recipient;
+  //         complete[i] = request.complete;
+  //         approvalCounts[i] = request.approvalCount;
+  //     }
+     
+  //    return (requests.length, descriptions, values, recipients, complete, approvalCounts);
+  // }
 }

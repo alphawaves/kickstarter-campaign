@@ -21,7 +21,7 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/campaigns/[pid]": [
+    "/campaigns/new": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
